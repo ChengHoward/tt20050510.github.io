@@ -13,7 +13,7 @@
     　　　　{% for content in site.contents %}
 
     　　　　　　
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ content.url }}">{{ content.title }}</a></li>
+    <li>{{ content.date | date_to_string }} <a href="{{ site.baseurl }}{{ content.url }}">{{ content.title }}</a></li>
 
     　　　　{% endfor %}
 
