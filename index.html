@@ -1,0 +1,11 @@
+---
+layout: default
+title: tt20050510.github.io
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+    {% for content in site.contents %}
+    <li>{{ content.date | date_to_string }} <a href="{{ site.baseurl }}{{ content.url }}">{{ content.title }}</a></li>
+    {% endfor %}
+</ul>
